@@ -1,0 +1,77 @@
+<template>
+  <footer class="bg-yoga-ocean-dark text-white py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 rounded-full bg-yoga-sand flex items-center justify-center">
+              <span class="font-bold text-yoga-ocean-dark text-xs leading-none" style="font-size: 0.65rem; letter-spacing: -0.5px;">JYS</span>
+            </div>
+            <span class="font-bold">Jimbaran Yoga</span>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Your sanctuary for wellness and mindfulness in beautiful Bali.
+          </p>
+          <div class="flex gap-4 mt-6">
+            <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-yoga-sand transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><g id="social-instagram"> <path d="M23.9,7.1c-0.1-1.3-0.3-2.1-0.6-2.9C23.1,3.4,22.7,2.7,22,2s-1.3-1.1-2.1-1.4c-0.8-0.3-1.6-0.5-2.9-0.6C15.7,0,15.3,0,12,0 S8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.4,0.6,4.1C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12 s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22s1.3,1.1,2.1,1.4c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24 s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4s1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12 S24,8.3,23.9,7.1z M21.8,16.8c-0.1,1.2-0.2,1.8-0.4,2.2c-0.2,0.6-0.5,1-0.9,1.4s-0.8,0.7-1.4,0.9c-0.4,0.2-1.1,0.4-2.2,0.4 c-1.3,0.1-1.6,0.1-4.8,0.1s-3.6,0-4.8-0.1c-1.2-0.1-1.8-0.2-2.2-0.4c-0.6-0.2-1-0.5-1.4-0.9s-0.7-0.8-0.9-1.4 c-0.2-0.4-0.4-1.1-0.4-2.2c-0.1-1.3-0.1-1.6-0.1-4.8s0-3.6,0.1-4.8C2.3,6,2.5,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4s0.8-0.7,1.4-0.9 C5.3,2.5,6,2.3,7.2,2.2C8.4,2.2,8.8,2.2,12,2.2s3.6,0,4.8,0.1c1.2,0.1,1.8,0.2,2.2,0.4c0.6,0.2,1,0.5,1.4,0.9s0.7,0.8,0.9,1.4 c0.2,0.4,0.4,1.1,0.4,2.2c0.1,1.3,0.1,1.6,0.1,4.8S21.8,15.6,21.8,16.8z"></path> <path d="M12,6c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S15.3,6,12,6z M12,15.9c-2.2,0-3.9-1.7-3.9-3.9S9.8,8.1,12,8.1s3.9,1.7,3.9,3.9 S14.2,15.9,12,15.9z"></path> <circle cx="18.5" cy="6" r="1.5"></circle> </g></svg>
+            </a>
+            <a href="https://wa.me/62812345678" target="_blank" class="text-gray-400 hover:text-yoga-sand transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"></path><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-lg mb-6">Links</h4>
+          <ul class="space-y-3 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-yoga-sand transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-yoga-sand transition-colors">Classes</a></li>
+            <li><a href="#" class="hover:text-yoga-sand transition-colors">Pricing</a></li>
+            <li><a href="#" class="hover:text-yoga-sand transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Classes -->
+        <div>
+          <h4 class="font-bold text-lg mb-6">Classes</h4>
+          <ul class="space-y-3 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-yoga-sand transition-colors">Morning Flow</a></li>
+            <li><a href="#" class="hover:text-yoga-sand transition-colors">Hatha Yoga</a></li>
+            <li><a href="#" class="hover:text-yoga-sand transition-colors">Power Yoga</a></li>
+            <li><a href="#" class="hover:text-yoga-sand transition-colors">Restorative</a></li>
+          </ul>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <h4 class="font-bold text-lg mb-6">Info</h4>
+          <ul class="space-y-4 text-sm text-gray-300">
+            <li>
+              <p class="font-semibold text-white mb-1">Hours</p>
+              <p>6 AM - 9 PM daily</p>
+            </li>
+            <li>
+              <p class="font-semibold text-white mb-1">Address</p>
+              <p>Jimbaran Beach, Bali</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-gray-700 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <p>© 2025 Jimbaran Yoga. All rights reserved.</p>
+          <p class="mt-4 md:mt-0">Made with love for wellness</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script setup>
+// No state needed
+</script>
