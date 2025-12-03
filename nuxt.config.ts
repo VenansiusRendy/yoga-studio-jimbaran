@@ -3,21 +3,41 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: ''
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Inter:wght@400;500&display=swap'
+        }
+      ]
+    }
+  },
   tailwindcss: {
     config: {
       theme: {
         extend: {
           colors: {
             yoga: {
-              'primary-green': '#4A7856',
-              'sand': '#D6C7A1',
-              'earth': '#A27B5C',
-              'cream': '#F7F4EC',
-              'ocean-dark': '#2F3E46',
+              'primary': '#225761',
+              'accent': '#E68257',
+              'secondary': '#BDCABF',
+              'light': '#F9ECE0',
+              'dark': '#2F3E46',
             }
           },
           fontFamily: {
-            'sans': ['system-ui', 'sans-serif']
+            'heading': ['Montserrat', 'sans-serif'],
+            'body': ['Inter', 'system-ui', 'sans-serif']
           }
         }
       }
