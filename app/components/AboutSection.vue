@@ -52,7 +52,7 @@
             <svg class="w-6 h-6 text-yoga-primary mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
             </svg>
-            <p class="font-semibold text-yoga-dark text-sm">Part of NUI Healthy Ecosystem</p>
+            <p class="font-semibold text-yoga-dark text-sm">Part of Healthy Ecosystem</p>
             <p class="text-gray-600 text-xs mt-1">Wellness supported through movement and nourishment — because balance begins within.</p>
           </div>
         </div>

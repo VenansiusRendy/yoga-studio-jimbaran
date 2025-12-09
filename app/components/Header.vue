@@ -3,18 +3,18 @@
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <!-- Logo -->
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yoga-primary to-yoga-secondary flex items-center justify-center">
-          <span class="font-bold text-white text-xs leading-none" style="font-size: 0.65rem; letter-spacing: -0.5px;">JYS</span>
+        <div class="w-10 h-10 rounded-full bg-yoga-light flex items-center justify-center">
+          <img src="/icon.png" class="w-[80%] h-[80%]" alt="">
         </div>
         <span class="font-semibold text-yoga-dark text-sm md:text-base hidden sm:inline">Jimbaran Yoga</span>
       </div>
       
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-8">
-        <a href="#" class="text-sm text-gray-600 hover:text-yoga-primary transition-colors">About</a>
-        <a href="#" class="text-sm text-gray-600 hover:text-yoga-primary transition-colors">Classes</a>
-        <a href="#" class="text-sm text-gray-600 hover:text-yoga-primary transition-colors">Pricing</a>
-        <a href="#" class="text-sm text-gray-600 hover:text-yoga-primary transition-colors">Contact</a>
+        <a href="#about" class="text-sm text-gray-600 hover:text-yoga-primary transition-colors">About</a>
+        <a href="#schedule" class="text-sm text-gray-600 hover:text-yoga-primary transition-colors">Classes</a>
+        <a href="#pricing" class="text-sm text-gray-600 hover:text-yoga-primary transition-colors">Pricing</a>
+        <a href="#contact" class="text-sm text-gray-600 hover:text-yoga-primary transition-colors">Contact</a>
       </div>
 
       <!-- CTA Button -->
@@ -33,7 +33,7 @@
 
 <script setup>
 const whatsappLink = computed(() => {
-  const phoneNumber = '62812345678'
+  const phoneNumber = '+6287776336882'
   const message = encodeURIComponent('Hi, I would like to book a yoga session at Jimbaran Yoga Studio.')
   return `https://wa.me/${phoneNumber}?text=${message}`
 })

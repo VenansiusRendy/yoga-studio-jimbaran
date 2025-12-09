@@ -32,27 +32,27 @@
 const instructors = [
   {
     id: 1,
-    name: 'Sarah Johnson',
-    role: 'Slow Flow & Gentle Vinyasa',
-    bio: "Sarah's classes center on mindful transitions and steady breathing. Her warm, grounding guidance helps students reconnect with their natural rhythm.",
+    name: 'Saut Ganda Nainggolan',
+    role: 'Mindful Flow & Emotional Balance',
+    bio: "I started yoga simply as a practice and part of my career path, but over the years I’ve come to truly understand how deeply yoga has influenced my life. Yoga is not just about breathing exercises or physical poses — it is about emotional control, mental clarity, and developing inner intelligence.",
     image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?w=400&h=500&fit=crop',
-    specialties: ['Slow Flow', 'Gentle Vinyasa', 'Restorative']
+    specialties: ['Mental Clarity', 'Emotional Stability', 'Inner Balance']
   },
   {
     id: 2,
-    name: 'Michael Chen',
-    role: 'Mobility, Alignment & Functional Movement',
-    bio: 'Michael blends yoga, mobility, and modern movement principles. His teaching is calm, precise, and supportive — ideal for building strength with ease.',
+    name: 'Putri Rafa Syabia',
+    role: 'Vinyasa, Mat Pilates & Functional Mobility',
+    bio: 'Hi, I’m Putri Rafa Syabia — a certified yoga instructor who has completed a 200H Yoga Teacher Training with Bodsphere on Udemy. I specialize in Vinyasa Yoga and Mat Pilates, with a strong focus on stretching, core strength, mobility, and body conditioning. My classes are designed for beginners and intermediate students who want to build strength, flexibility, and confidence in their practice.',
     image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?w=400&h=500&fit=crop',
-    specialties: ['Alignment', 'Mobility', 'Functional']
+    specialties: ['Core Strength', 'Flexibility Boost', 'Confident Movement']
   },
   {
     id: 3,
-    name: 'Emma Williams',
-    role: 'Yin & Restorative Yoga',
-    bio: "Emma's sessions offer deep rest and gentle release. Her nurturing approach helps students soften, unwind, and restore balance from within.",
+    name: 'Fauziyah Aulia Rishanti (Ziya)',
+    role: 'Gentle Hatha & Beginner-Friendly Practice',
+    bio: "Hi, I’m Ziya — a passionate yoga instructor focused on making yoga accessible and welcoming for everyone, especially beginners. With a strong foundation in Hatha Yoga, I create safe, gentle, and easy-to-follow classes designed to build confidence, flexibility, and body awareness. As a growing instructor, I bring a fresh, supportive, and patient approach to help you start your yoga journey comfortably.",
     image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?w=400&h=500&fit=crop',
-    specialties: ['Yin', 'Restorative', 'Release']
+    specialties: ['Gentle Guidance', 'Body Awareness', 'Calming Practice']
   }
 ]
 </script>

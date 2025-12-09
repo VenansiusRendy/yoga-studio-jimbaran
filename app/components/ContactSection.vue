@@ -18,7 +18,7 @@
           </div>
           <h3 class="font-bold text-yoga-dark font-heading mb-2">Location</h3>
           <p class="text-gray-600 text-sm">Jimbaran, Bali — A calm, welcoming studio inspired by the ocean.</p>
-          <a href="https://maps.google.com/?q=Jimbaran" target="_blank" class="text-yoga-primary text-sm font-medium hover:text-yoga-accent transition-colors mt-3 inline-block">
+          <a href="https://maps.app.goo.gl/vrjqVVySuDHDGSBj6" target="_blank" class="text-yoga-primary text-sm font-medium hover:text-yoga-accent transition-colors mt-3 inline-block">
             View Map →
           </a>
         </div>
@@ -31,7 +31,7 @@
             </svg>
           </div>
           <h3 class="font-bold text-yoga-dark font-heading mb-2">WhatsApp</h3>
-          <p class="text-gray-600 text-sm">+62 812-3456-7890</p>
+          <p class="text-gray-600 text-sm">+628-777-633-6882</p>
           <a :href="whatsappLink" target="_blank" class="text-yoga-primary text-sm font-medium hover:text-yoga-accent transition-colors mt-3 inline-block">
             Message us for bookings or questions. →
           </a>
@@ -45,8 +45,8 @@
             </svg>
           </div>
           <h3 class="font-bold text-yoga-dark font-heading mb-2">Email</h3>
-          <p class="text-gray-600 text-sm">hello@jimbaranyoga.com</p>
-          <a href="mailto:hello@jimbaranyoga.com" class="text-yoga-primary text-sm font-medium hover:text-yoga-accent transition-colors mt-3 inline-block">
+          <p class="text-gray-600 text-sm">jimbaranyogastudio@gmail.com</p>
+          <a href="mailto:jimbaranyogastudio@gmail.com" class="text-yoga-primary text-sm font-medium hover:text-yoga-accent transition-colors mt-3 inline-block">
             Get in touch for general inquiries or collaborations. →
           </a>
         </div>
@@ -71,7 +71,7 @@
 
 <script setup>
 const whatsappLink = computed(() => {
-  const phoneNumber = '62812345678'
+  const phoneNumber = '+6287776336882'
   const message = encodeURIComponent('Hi, I would like to book a yoga session at Jimbaran Yoga Studio.')
   return `https://wa.me/${phoneNumber}?text=${message}`
 })

@@ -22,22 +22,22 @@
               </div>
               <p class="text-gray-600 text-sm font-body">with <span class="font-semibold">{{ yogaClass.instructor }}</span> • {{ yogaClass.duration }} min</p>
               <p class="text-gray-500 text-sm mt-2">{{ yogaClass.description }}</p>
-              <div class="flex items-center gap-4 mt-3 text-xs text-gray-500">
+              <!-- <div class="flex items-center gap-4 mt-3 text-xs text-gray-500">
                 <span v-if="yogaClass.spots > 0" class="flex items-center gap-1">
                   <svg class="w-4 h-4 text-yoga-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/></svg>
                   {{ yogaClass.spots }} spots available
                 </span>
                 <span v-else class="text-orange-600 font-semibold">Nearly Full</span>
-              </div>
+              </div> -->
             </div>
-            <a 
+            <NuxtLink 
               v-if="yogaClass.spots > 0"
-              :href="whatsappLink"
+              @click="whatsappLink(yogaClass)"
               target="_blank"
               class="px-4 py-2 bg-yoga-accent text-white rounded-lg hover:bg-yoga-primary transition-colors font-medium text-sm whitespace-nowrap"
             >
               Book
-            </a>
+            </NuxtLink>
             <button v-else disabled class="px-4 py-2 bg-gray-300 text-gray-500 rounded-lg cursor-not-allowed font-medium text-sm">
               Full
             </button>
@@ -52,64 +52,168 @@
 const classes = [
   {
     id: 1,
-    time: '8:00 AM',
-    type: 'Morning Slow Flow',
+    time: 'MON 07:30',
+    type: 'Hatha, Ashtanga, Power Yoga, Matt Pilates',
     level: 'All Levels',
-    instructor: 'Sarah Johnson',
+    instructor: 'Saut (Senior Instructor)',
     duration: 60,
     spots: 8,
     typeColor: 'bg-yoga-accent',
-    description: 'A refreshing, gentle start to your day.'
+    description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
   },
   {
     id: 2,
-    time: '10:00 AM',
-    type: 'Vinyasa Flow',
+    time: 'MON 09:00',
+    type: 'Hatha, Ashtanga, Power Yoga, Matt Pilates',
     level: 'All Levels',
-    instructor: 'Michael Chen',
+    instructor: 'Saut (Senior Instructor)',
     duration: 60,
     spots: 5,
-    typeColor: 'bg-yoga-secondary',
-    description: 'A steady, energizing practice to build strength and focus.'
+    typeColor: 'bg-yoga-accent',
+    description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
   },
   {
     id: 3,
-    time: '4:00 PM',
-    type: 'Gentle Stretch & Mobility',
+    time: 'MON 17:00',
+    type: 'Vinyasa, Matt Pilates',
     level: 'All Levels',
-    instructor: 'Michael Chen',
-    duration: 45,
+    instructor: 'Putri (Senior Instructor)',
+    duration: 60,
     spots: 10,
-    typeColor: 'bg-gray-400',
-    description: 'Supportive movements to ease tension and improve range.'
+    typeColor: 'bg-yoga-primary',
+    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
   },
   {
     id: 4,
-    time: '6:00 PM',
-    type: 'Yin Release',
+    time: 'MON 18:00',
+    type: 'Vinyasa, Matt Pilates',
     level: 'All Levels',
-    instructor: 'Emma Williams',
+    instructor: 'Putri (Senior Instructor)',
     duration: 60,
     spots: 2,
     typeColor: 'bg-yoga-primary',
-    description: 'Deep, grounding stretches to help you rest and soften.'
+    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
   },
   {
     id: 5,
-    time: '5:30 PM',
-    type: 'Sunset Flow',
+    time: 'THU 17:00',
+    type: 'Vinyasa, Matt Pilates',
     level: 'All Levels',
-    instructor: 'Sarah Johnson',
+    instructor: 'Putri (Senior Instructor)',
+    duration: 60,
+    spots: 12,
+    typeColor: 'bg-yoga-primary',
+    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
+  },
+  {
+    id: 6,
+    time: 'THU 18:00',
+    type: 'Vinyasa, Matt Pilates',
+    level: 'All Levels',
+    instructor: 'Putri (Senior Instructor)',
+    duration: 60,
+    spots: 12,
+    typeColor: 'bg-yoga-primary',
+    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
+  },
+  {
+    id: 7,
+    time: 'SAT 07:30',
+    type: 'Hatha',
+    level: 'Beginner',
+    instructor: 'Ziya',
     duration: 60,
     spots: 12,
     typeColor: 'bg-yoga-dark',
-    description: 'A warm, slow flow inspired by the calm Jimbaran sunset.'
-  }
+    description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
+  },
+  {
+    id: 9,
+    time: 'SAT 9:00',
+    type: 'Hatha',
+    level: 'Beginner',
+    instructor: 'Ziya',
+    duration: 60,
+    spots: 12,
+    typeColor: 'bg-yoga-dark',
+    description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
+  },
+  {
+    id: 10,
+    time: 'SAT 17:00',
+    type: 'Vinyasa, Matt Pilates',
+    level: 'All Levels',
+    instructor: 'Putri (Senior Instructor)',
+    duration: 60,
+    spots: 12,
+    typeColor: 'bg-yoga-primary',
+    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
+  },
+  {
+    id: 11,
+    time: 'SAT 18:00',
+    type: 'Vinyasa, Matt Pilates',
+    level: 'All Levels',
+    instructor: 'Putri (Senior Instructor)',
+    duration: 60,
+    spots: 12,
+    typeColor: 'bg-yoga-primary',
+    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
+  },
+  {
+    id: 12,
+    time: 'SUN 07:30',
+    type: 'Hatha',
+    level: 'Beginner',
+    instructor: 'Ziya',
+    duration: 60,
+    spots: 12,
+    typeColor: 'bg-yoga-dark',
+    description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
+  },
+  {
+    id: 13,
+    time: 'SUN 9:00',
+    type: 'Hatha',
+    level: 'Beginner',
+    instructor: 'Ziya',
+    duration: 60,
+    spots: 12,
+    typeColor: 'bg-yoga-dark',
+    description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
+  },
+  {
+    id: 14,
+    time: 'SUN 17:00',
+    type: 'Hatha, Ashtanga, Power Yoga, Matt Pilates',
+    level: 'All Levels',
+    instructor: 'Saut (Senior Instructor)',
+    duration: 60,
+    spots: 8,
+    typeColor: 'bg-yoga-accent',
+    description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
+  },
+  {
+    id: 15,
+    time: 'SUN 18:00',
+    type: 'Hatha, Ashtanga, Power Yoga, Matt Pilates',
+    level: 'All Levels',
+    instructor: 'Saut (Senior Instructor)',
+    duration: 60,
+    spots: 5,
+    typeColor: 'bg-yoga-accent',
+    description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
+  },
 ]
 
-const whatsappLink = computed(() => {
-  const phoneNumber = '62812345678'
-  const message = encodeURIComponent('Hi, I would like to book a yoga session at Jimbaran Yoga Studio.')
-  return `https://wa.me/${phoneNumber}?text=${message}`
-})
+const whatsappLink = (yogaClass) => {
+  const phoneNumber = '+6287776336882'
+  const message = encodeURIComponent(`Hi, I would like to book a yoga session at Jimbaran Yoga Studio with the following details:
+
+Name:
+Date: 
+Time: ${yogaClass.time}
+Instructor: ${yogaClass.instructor}`)
+  window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank')
+};
 </script>
