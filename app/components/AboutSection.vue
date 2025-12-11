@@ -27,33 +27,12 @@
 
         <!-- Features Grid -->
         <div class="grid grid-cols-2 gap-4 pt-4">
-          <div class="bg-white rounded-xl p-4 border border-gray-200">
-            <svg class="w-6 h-6 text-yoga-primary mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2 1m2-1l-2-1m2 1v2.5"/>
-            </svg>
-            <p class="font-semibold text-yoga-dark text-sm">Beginner-Friendly Classes</p>
-            <p class="text-gray-600 text-xs mt-1">Accessible sessions designed for all levels, with a focus on comfort and ease.</p>
-          </div>
-          <div class="bg-white rounded-xl p-4 border border-gray-200">
-            <svg class="w-6 h-6 text-yoga-primary mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-            </svg>
-            <p class="font-semibold text-yoga-dark text-sm">Mindful, Modern Environment</p>
-            <p class="text-gray-600 text-xs mt-1">A clean, minimalist studio inspired by the gentle colors and rhythm of the ocean.</p>
-          </div>
-          <div class="bg-white rounded-xl p-4 border border-gray-200">
-            <svg class="w-6 h-6 text-yoga-primary mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <p class="font-semibold text-yoga-dark text-sm">Skilled & Caring Instructors</p>
-            <p class="text-gray-600 text-xs mt-1">Teachers who guide with warmth, presence, and supportive attention.</p>
-          </div>
-          <div class="bg-white rounded-xl p-4 border border-gray-200">
-            <svg class="w-6 h-6 text-yoga-primary mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-            </svg>
-            <p class="font-semibold text-yoga-dark text-sm">Part of Healthy Ecosystem</p>
-            <p class="text-gray-600 text-xs mt-1">Wellness supported through movement and nourishment — because balance begins within.</p>
+          <div v-for="feature in features" class="bg-white rounded-xl p-4 border border-gray-200">
+            <div class="text-center">
+              <img class="w-12 h-12 mx-auto mb-2" :src="feature.icon" :alt="feature.title">
+              <p class="font-semibold text-yoga-dark text-sm">{{ feature.title }}</p>
+              <p class="text-gray-600 text-xs mt-1">{{ feature.description }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -61,6 +40,32 @@
   </section>
 </template>
 
-<script setup>
-// No state needed
+<script setup lang="ts">
+interface Features {
+  icon: string,
+  title: string,
+  description: string
+}
+const features = <Features[]>[
+  {
+    icon: '/beginner.png',
+    title: 'Beginner-Friendly Classes',
+    description: 'Accessible sessions designed for all levels, with a focus on comfort and ease.'
+  },
+  {
+    icon: '/mindful.png',
+    title: 'Mindful, Modern Environment',
+    description: 'A clean, minimalist studio inspired by the gentle colors and rhythm of the ocean.'
+  },
+  {
+    icon: '/instructor.png',
+    title: 'Skilled & Caring Instructors',
+    description: 'Teachers who guide with warmth, presence, and supportive attention.'
+  },
+  {
+    icon: '/healthy.png',
+    title: 'Part of Healthy Ecosystem',
+    description: 'Wellness supported through movement and nourishment — because balance begins within.'
+  }
+]
 </script>

@@ -3,10 +3,10 @@
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <!-- Logo -->
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-yoga-light flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center">
           <img src="/icon.png" class="w-[80%] h-[80%]" alt="">
         </div>
-        <span class="font-semibold text-yoga-dark text-sm md:text-base hidden sm:inline">Jimbaran Yoga</span>
+        <span class="font-semibold text-yoga-dark text-sm md:text-base hidden sm:inline">Jimbaran Yoga Studio</span>
       </div>
       
       <!-- Desktop Nav -->

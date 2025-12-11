@@ -35,8 +35,8 @@
         <!-- Monthly Pass (Featured) -->
         <div class="bg-gradient-to-br from-yoga-primary to-yoga-accent rounded-2xl p-8 text-white shadow-lg relative md:scale-105">
           <div class="absolute -top-4 left-6 bg-yoga-accent text-white px-4 py-1 rounded-full text-xs font-bold">POPULAR</div>
-          <h3 class="text-xl font-bold mb-2 font-heading">Four-Pack Class</h3>
-          <p class="text-green-100 text-sm mb-6">Access to four classes.<br />A gentle commitment to your daily balance.</p>
+          <h3 class="text-xl font-bold mb-2 font-heading">Five-Pack Class</h3>
+          <p class="text-green-100 text-sm mb-6">Access to five classes.<br />A gentle commitment to your daily balance.</p>
           <p class="text-3xl font-bold mb-6">IDR 400K /<span class="text-lg">PACK</span></p>
           <ul class="space-y-3 mb-8 text-sm text-green-50">
             <li class="flex items-center gap-2">

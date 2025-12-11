@@ -9,8 +9,8 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div v-for="instructor in instructors" :key="instructor.id" class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-yoga-accent transition-colors">
-          <div class="h-64 overflow-hidden">
-            <img :src="instructor.image" :alt="instructor.name" class="w-full h-full object-cover"/>
+          <div class="h-96 overflow-hidden">
+            <img :src="instructor.image" :alt="instructor.name" class="w-full object-contain"/>
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-yoga-dark font-heading">{{ instructor.name }}</h3>
@@ -35,7 +35,7 @@ const instructors = [
     name: 'Saut Ganda Nainggolan',
     role: 'Mindful Flow & Emotional Balance',
     bio: "I started yoga simply as a practice and part of my career path, but over the years I’ve come to truly understand how deeply yoga has influenced my life. Yoga is not just about breathing exercises or physical poses — it is about emotional control, mental clarity, and developing inner intelligence.",
-    image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?w=400&h=500&fit=crop',
+    image: 'instructor_2.jpg',
     specialties: ['Mental Clarity', 'Emotional Stability', 'Inner Balance']
   },
   {
@@ -43,7 +43,7 @@ const instructors = [
     name: 'Putri Rafa Syabia',
     role: 'Vinyasa, Mat Pilates & Functional Mobility',
     bio: 'Hi, I’m Putri Rafa Syabia — a certified yoga instructor who has completed a 200H Yoga Teacher Training with Bodsphere on Udemy. I specialize in Vinyasa Yoga and Mat Pilates, with a strong focus on stretching, core strength, mobility, and body conditioning. My classes are designed for beginners and intermediate students who want to build strength, flexibility, and confidence in their practice.',
-    image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?w=400&h=500&fit=crop',
+    image: 'instructor_1.jpg',
     specialties: ['Core Strength', 'Flexibility Boost', 'Confident Movement']
   },
   {
@@ -51,7 +51,7 @@ const instructors = [
     name: 'Fauziyah Aulia Rishanti (Ziya)',
     role: 'Gentle Hatha & Beginner-Friendly Practice',
     bio: "Hi, I’m Ziya — a passionate yoga instructor focused on making yoga accessible and welcoming for everyone, especially beginners. With a strong foundation in Hatha Yoga, I create safe, gentle, and easy-to-follow classes designed to build confidence, flexibility, and body awareness. As a growing instructor, I bring a fresh, supportive, and patient approach to help you start your yoga journey comfortably.",
-    image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?w=400&h=500&fit=crop',
+    image: 'instructor_1.jpg',
     specialties: ['Gentle Guidance', 'Body Awareness', 'Calming Practice']
   }
 ]

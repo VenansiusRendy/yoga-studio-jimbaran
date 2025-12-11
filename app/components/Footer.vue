@@ -5,10 +5,13 @@
         <!-- Brand -->
         <div>
           <div class="flex items-center gap-2 mb-4">
-            <div class="w-9 h-9 rounded-full bg-yoga-accent flex items-center justify-center">
-              <span class="font-bold text-yoga-dark text-xs leading-none" style="font-size: 0.65rem; letter-spacing: -0.5px;">JYS</span>
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+              <!-- <span class="font-bold text-yoga-dark text-xs leading-none" style="font-size: 0.65rem; letter-spacing: -0.5px;">JYS</span> -->
+              <div class="w-10 h-10 rounded-full flex items-center justify-center">
+                <img src="/icon.png" class="w-[80%] h-[80%]" alt="">
+              </div>
             </div>
-            <span class="font-bold">Jimbaran Yoga</span>
+            <span class="font-bold">Jimbaran Yoga Studio</span>
           </div>
           <p class="text-yoga-secondary text-sm leading-relaxed">
             Jimbaran Yoga Studio — A minimalist wellness space blending movement, mindfulness, and nourishment.
@@ -64,7 +67,7 @@
       <!-- Divider -->
       <div class="border-t border-yoga-secondary pt-8">
         <div class="flex flex-col md:flex-row justify-between items-center text-sm text-yoga-secondary">
-          <p>© 2025 Jimbaran Yoga. All rights reserved.</p>
+          <p>© 2025 Jimbaran Yoga Studio. All rights reserved.</p>
           <p class="mt-4 md:mt-0">Made with love for wellness</p>
         </div>
       </div>
