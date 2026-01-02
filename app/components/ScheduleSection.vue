@@ -73,50 +73,6 @@ const classes = [
     description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
   },
   {
-    id: 3,
-    time: 'MON 17:00',
-    type: 'Vinyasa, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Putri (Senior Instructor)',
-    duration: 60,
-    spots: 10,
-    typeColor: 'bg-yoga-primary',
-    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
-  },
-  {
-    id: 4,
-    time: 'MON 18:00',
-    type: 'Vinyasa, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Putri (Senior Instructor)',
-    duration: 60,
-    spots: 2,
-    typeColor: 'bg-yoga-primary',
-    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
-  },
-  {
-    id: 5,
-    time: 'THU 17:00',
-    type: 'Vinyasa, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Putri (Senior Instructor)',
-    duration: 60,
-    spots: 12,
-    typeColor: 'bg-yoga-primary',
-    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
-  },
-  {
-    id: 6,
-    time: 'THU 18:00',
-    type: 'Vinyasa, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Putri (Senior Instructor)',
-    duration: 60,
-    spots: 12,
-    typeColor: 'bg-yoga-primary',
-    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
-  },
-  {
     id: 7,
     time: 'SAT 07:30',
     type: 'Hatha',
@@ -137,28 +93,6 @@ const classes = [
     spots: 12,
     typeColor: 'bg-yoga-dark',
     description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
-  },
-  {
-    id: 10,
-    time: 'SAT 17:00',
-    type: 'Vinyasa, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Putri (Senior Instructor)',
-    duration: 60,
-    spots: 12,
-    typeColor: 'bg-yoga-primary',
-    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
-  },
-  {
-    id: 11,
-    time: 'SAT 18:00',
-    type: 'Vinyasa, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Putri (Senior Instructor)',
-    duration: 60,
-    spots: 12,
-    typeColor: 'bg-yoga-primary',
-    description: 'A smooth and energizing mix of Vinyasa and Mat Pilates designed to build strength, mobility, and confidence. Putri’s classes feel welcoming, supportive, and beginner-friendly—helping you move with ease, breathe more freely, and feel stronger from the inside out.'
   },
   {
     id: 12,

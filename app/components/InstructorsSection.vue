@@ -7,10 +7,10 @@
         <p class="text-gray-600 mt-4">Our teachers lead with presence, compassion, and clarity. Each brings a unique approach to movement while sharing the same intention — to create a calm, inclusive space for everyone.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div v-for="instructor in instructors" :key="instructor.id" class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-yoga-accent transition-colors">
-          <div class="h-96 overflow-hidden">
-            <img :src="instructor.image" :alt="instructor.name" class="w-full object-contain"/>
+      <div class="md:flex gap-8 md:w-[60%] mx-auto">
+        <div v-for="instructor in instructors" :key="instructor.id" class="flex-1 bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-yoga-accent transition-colors">
+          <div class="overflow-hidden h-96">
+            <img :src="instructor.image" :alt="instructor.name" class="object-contain w-full"/>
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-yoga-dark font-heading">{{ instructor.name }}</h3>
@@ -40,14 +40,6 @@ const instructors = [
   },
   {
     id: 2,
-    name: 'Putri Rafa Syabia',
-    role: 'Vinyasa, Mat Pilates & Functional Mobility',
-    bio: 'Hi, I’m Putri Rafa Syabia — a certified yoga instructor who has completed a 200H Yoga Teacher Training with Bodsphere on Udemy. I specialize in Vinyasa Yoga and Mat Pilates, with a strong focus on stretching, core strength, mobility, and body conditioning. My classes are designed for beginners and intermediate students who want to build strength, flexibility, and confidence in their practice.',
-    image: 'instructor_1.jpg',
-    specialties: ['Core Strength', 'Flexibility Boost', 'Confident Movement']
-  },
-  {
-    id: 3,
     name: 'Fauziyah Aulia Rishanti (Ziya)',
     role: 'Gentle Hatha & Beginner-Friendly Practice',
     bio: "Hi, I’m Ziya — a passionate yoga instructor focused on making yoga accessible and welcoming for everyone, especially beginners. With a strong foundation in Hatha Yoga, I create safe, gentle, and easy-to-follow classes designed to build confidence, flexibility, and body awareness. As a growing instructor, I bring a fresh, supportive, and patient approach to help you start your yoga journey comfortably.",

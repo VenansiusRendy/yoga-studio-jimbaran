@@ -1,6 +1,7 @@
 <template>
   <div class="min-h-screen bg-white">
     <Header />
+    <Announcement />
     <HeroSection />
     <AboutSection />
     <InstructorsSection />
@@ -14,6 +15,7 @@
 
 <script setup>
 import Header from '@/components/Header.vue'
+import Announcement from '@/components/Announcement.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import InstructorsSection from '@/components/InstructorsSection.vue'
