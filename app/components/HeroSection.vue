@@ -57,9 +57,5 @@
 </template>
 
 <script setup>
-const whatsappLink = computed(() => {
-  const phoneNumber = '+6287776336882'
-  const message = encodeURIComponent('Hi, I would like to book a yoga session at Jimbaran Yoga Studio.')
-  return `https://wa.me/${phoneNumber}?text=${message}`
-})
+const whatsappLink = useWhatsappMessage().buildLinkDefault();
 </script>

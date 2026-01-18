@@ -1,0 +1,98 @@
+export const classes = [
+	{
+		id: 1,
+		time: "MON 07:30",
+		type: "Hatha, Ashtanga, Power Yoga, Matt Pilates",
+		level: "All Levels",
+		instructor: "Saut (Senior Instructor)",
+		duration: 60,
+		spots: 8,
+		typeColor: "bg-yoga-accent",
+		description:
+			"A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.",
+	},
+	{
+		id: 2,
+		time: "MON 09:00",
+		type: "Hatha, Ashtanga, Power Yoga, Matt Pilates",
+		level: "All Levels",
+		instructor: "Saut (Senior Instructor)",
+		duration: 60,
+		spots: 5,
+		typeColor: "bg-yoga-accent",
+		description:
+			"A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.",
+	},
+	{
+		id: 7,
+		time: "SAT 07:30",
+		type: "Hatha",
+		level: "Beginner",
+		instructor: "Ziya",
+		duration: 60,
+		spots: 12,
+		typeColor: "bg-yoga-dark",
+		description:
+			"A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.",
+	},
+	{
+		id: 9,
+		time: "SAT 9:00",
+		type: "Hatha",
+		level: "Beginner",
+		instructor: "Ziya",
+		duration: 60,
+		spots: 12,
+		typeColor: "bg-yoga-dark",
+		description:
+			"A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.",
+	},
+	{
+		id: 12,
+		time: "SUN 07:30",
+		type: "Hatha",
+		level: "Beginner",
+		instructor: "Ziya",
+		duration: 60,
+		spots: 12,
+		typeColor: "bg-yoga-dark",
+		description:
+			"A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.",
+	},
+	{
+		id: 13,
+		time: "SUN 9:00",
+		type: "Hatha",
+		level: "Beginner",
+		instructor: "Ziya",
+		duration: 60,
+		spots: 12,
+		typeColor: "bg-yoga-dark",
+		description:
+			"A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.",
+	},
+	{
+		id: 14,
+		time: "SUN 17:00",
+		type: "Hatha, Ashtanga, Power Yoga, Matt Pilates",
+		level: "All Levels",
+		instructor: "Saut (Senior Instructor)",
+		duration: 60,
+		spots: 8,
+		typeColor: "bg-yoga-accent",
+		description:
+			"A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.",
+	},
+	{
+		id: 15,
+		time: "SUN 18:00",
+		type: "Hatha, Ashtanga, Power Yoga, Matt Pilates",
+		level: "All Levels",
+		instructor: "Saut (Senior Instructor)",
+		duration: 60,
+		spots: 5,
+		typeColor: "bg-yoga-accent",
+		description:
+			"A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.",
+	},
+];

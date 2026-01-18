@@ -1,7 +1,9 @@
 <template>
   <div class="min-h-screen bg-white">
     <Header />
-    <Announcement />
+    <Announcement 
+    v-if="new Date() < announcement.endDate && new Date() > announcement.startDate"
+    :data="{title: announcement.title, description: announcement.description, message: announcement.message}"/>
     <HeroSection />
     <AboutSection />
     <InstructorsSection />
@@ -24,4 +26,7 @@ import ScheduleSection from '@/components/ScheduleSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import Footer from '@/components/Footer.vue'
 import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton.vue'
+import { announcement } from './data/announcement'
+
+
 </script>

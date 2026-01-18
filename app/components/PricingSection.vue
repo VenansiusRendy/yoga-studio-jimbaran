@@ -27,12 +27,12 @@
               No commitment
             </li>
           </ul>
-          <a :href="whatsappLink" target="_blank" class="w-full px-4 py-2 bg-yoga-accent text-white rounded-lg hover:bg-yoga-primary transition-colors font-medium text-sm text-center inline-block">
+          <a :href="whatsappLinkPrice(`Hi, I would like to purchase a Drop-In Class at Jimbaran Yoga Studio.`)" target="_blank" class="w-full px-4 py-2 bg-yoga-accent text-white rounded-lg hover:bg-yoga-primary transition-colors font-medium text-sm text-center inline-block">
             Get Started
           </a>
         </div>
 
-        <!-- Monthly Pass (Featured) -->
+        <!-- Five-Pack Class (Featured) -->
         <div class="bg-gradient-to-br from-yoga-primary to-yoga-accent rounded-2xl p-8 text-white shadow-lg relative md:scale-105">
           <div class="absolute -top-4 left-6 bg-yoga-accent text-white px-4 py-1 rounded-full text-xs font-bold">POPULAR</div>
           <h3 class="text-xl font-bold mb-2 font-heading">Five-Pack Class</h3>
@@ -52,7 +52,7 @@
               Healthy Routine
             </li>
           </ul>
-          <a :href="whatsappLink" target="_blank" class="w-full px-4 py-2 bg-white text-yoga-primary rounded-lg hover:bg-yoga-light transition-colors font-medium text-sm text-center inline-block">
+          <a :href="whatsappLinkPrice(`Hi, I would like to purchase a Five-Pack Class at Jimbaran Yoga Studio.`)" target="_blank" class="w-full px-4 py-2 bg-white text-yoga-primary rounded-lg hover:bg-yoga-light transition-colors font-medium text-sm text-center inline-block">
             Get Started
           </a>
         </div>
@@ -76,7 +76,7 @@
               Flexible timing
             </li>
           </ul>
-          <a :href="whatsappLink" target="_blank" class="w-full px-4 py-2 bg-yoga-accent text-white rounded-lg hover:bg-yoga-primary transition-colors font-medium text-sm text-center inline-block">
+          <a :href="whatsappLinkPrice(`Hi, I would like to purchase a Private Session at Jimbaran Yoga Studio.`)" target="_blank" class="w-full px-4 py-2 bg-yoga-accent text-white rounded-lg hover:bg-yoga-primary transition-colors font-medium text-sm text-center inline-block">
             Get Started
           </a>
         </div>
@@ -86,9 +86,5 @@
 </template>
 
 <script setup>
-const whatsappLink = computed(() => {
-  const phoneNumber = '+6287776336882'
-  const message = encodeURIComponent('Hi, I would like to book a yoga session at Jimbaran Yoga Studio.')
-  return `https://wa.me/${phoneNumber}?text=${message}`
-})
+const whatsappLinkPrice = (message) =>  useWhatsappMessage().buildLink(message);
 </script>

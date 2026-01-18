@@ -31,7 +31,7 @@
             </svg>
           </div>
           <h3 class="font-bold text-yoga-dark font-heading mb-2">WhatsApp</h3>
-          <p class="text-gray-600 text-sm">+628-777-633-6882</p>
+          <p class="text-gray-600 text-sm">{{ contact.whatsappDisplay }}</p>
           <a :href="whatsappLink" target="_blank" class="text-yoga-primary text-sm font-medium hover:text-yoga-accent transition-colors mt-3 inline-block">
             Message us for bookings or questions. →
           </a>
@@ -45,8 +45,8 @@
             </svg>
           </div>
           <h3 class="font-bold text-yoga-dark font-heading mb-2">Email</h3>
-          <p class="text-gray-600 text-sm">jimbaranyogastudio@gmail.com</p>
-          <a href="mailto:jimbaranyogastudio@gmail.com" class="text-yoga-primary text-sm font-medium hover:text-yoga-accent transition-colors mt-3 inline-block">
+          <p class="text-gray-600 text-sm">{{ contact.email }}</p>
+          <a :href="`mailto:${contact.email}`" class="text-yoga-primary text-sm font-medium hover:text-yoga-accent transition-colors mt-3 inline-block">
             Get in touch for general inquiries or collaborations. →
           </a>
         </div>
@@ -70,9 +70,8 @@
 </template>
 
 <script setup>
-const whatsappLink = computed(() => {
-  const phoneNumber = '+6287776336882'
-  const message = encodeURIComponent('Hi, I would like to book a yoga session at Jimbaran Yoga Studio.')
-  return `https://wa.me/${phoneNumber}?text=${message}`
-})
+import { useWhatsappMessage } from '~/composables/useWhatsapp'
+import { contact } from '~/data/contact'
+
+const whatsappLink = useWhatsappMessage().buildLinkDefault();
 </script>

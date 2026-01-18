@@ -5,10 +5,10 @@
       <!-- Content -->
       <div class="flex-1">
         <h3 class="font-heading font-semibold text-lg md:text-xl leading-tight mb-2">
-          Yoga sessions by NUI Community launching on 12 January 2025.
+          {{ props.data.title }}
         </h3>
         <p class="font-body text-sm md:text-base opacity-90">
-          More than movement — a space to slow down, connect, and feel at home
+          {{ props.data.description }}
         </p>
       </div>
 
@@ -29,8 +29,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
 
-const message = encodeURIComponent("Hi! I'm interested in the Yoga sessions by NUI Community launching on 12 January 2025.")
-const whatsappEventLink = computed(() => `https://wa.me/+6287776336882?text=${message}`)
+const props = defineProps<{
+  data: {
+    title: string
+    description: string
+    message: string
+  }}>();
+
+
+const whatsappEventLink = useWhatsappMessage().buildLink(props.data.message)
+
 </script>

@@ -8,7 +8,7 @@
       </div>
 
       <div class="space-y-4">
-        <div v-for="yogaClass in classes" :key="yogaClass.id" class="bg-gradient-to-r from-white to-gray-50 rounded-xl p-6 border border-gray-100 hover:border-yoga-accent hover:shadow-md transition-all">
+        <div v-for="yogaClass in data" :key="yogaClass.id" class="bg-gradient-to-r from-white to-gray-50 rounded-xl p-6 border border-gray-100 hover:border-yoga-accent hover:shadow-md transition-all">
           <div class="flex items-start justify-between gap-4">
             <div class="flex-1">
               <div class="flex items-center gap-3 mb-2">
@@ -32,7 +32,7 @@
             </div>
             <NuxtLink 
               v-if="yogaClass.spots > 0"
-              @click="whatsappLink(yogaClass)"
+              :to="whatsappLink(yogaClass)"
               target="_blank"
               class="px-4 py-2 bg-yoga-accent text-white rounded-lg hover:bg-yoga-primary transition-colors font-medium text-sm whitespace-nowrap"
             >
@@ -49,105 +49,13 @@
 </template>
 
 <script setup>
-const classes = [
-  {
-    id: 1,
-    time: 'MON 07:30',
-    type: 'Hatha, Ashtanga, Power Yoga, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Saut (Senior Instructor)',
-    duration: 60,
-    spots: 8,
-    typeColor: 'bg-yoga-accent',
-    description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
-  },
-  {
-    id: 2,
-    time: 'MON 09:00',
-    type: 'Hatha, Ashtanga, Power Yoga, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Saut (Senior Instructor)',
-    duration: 60,
-    spots: 5,
-    typeColor: 'bg-yoga-accent',
-    description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
-  },
-  {
-    id: 7,
-    time: 'SAT 07:30',
-    type: 'Hatha',
-    level: 'Beginner',
-    instructor: 'Ziya',
-    duration: 60,
-    spots: 12,
-    typeColor: 'bg-yoga-dark',
-    description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
-  },
-  {
-    id: 9,
-    time: 'SAT 9:00',
-    type: 'Hatha',
-    level: 'Beginner',
-    instructor: 'Ziya',
-    duration: 60,
-    spots: 12,
-    typeColor: 'bg-yoga-dark',
-    description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
-  },
-  {
-    id: 12,
-    time: 'SUN 07:30',
-    type: 'Hatha',
-    level: 'Beginner',
-    instructor: 'Ziya',
-    duration: 60,
-    spots: 12,
-    typeColor: 'bg-yoga-dark',
-    description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
-  },
-  {
-    id: 13,
-    time: 'SUN 9:00',
-    type: 'Hatha',
-    level: 'Beginner',
-    instructor: 'Ziya',
-    duration: 60,
-    spots: 12,
-    typeColor: 'bg-yoga-dark',
-    description: 'A warm, gentle slow-flow experience inspired by the softness of the Jimbaran sunset. Ziya creates a safe, calming space for beginners to stretch, breathe, and unwind—helping you release tension, find comfort in movement, and end the day with a peaceful heart.'
-  },
-  {
-    id: 14,
-    time: 'SUN 17:00',
-    type: 'Hatha, Ashtanga, Power Yoga, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Saut (Senior Instructor)',
-    duration: 60,
-    spots: 8,
-    typeColor: 'bg-yoga-accent',
-    description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
-  },
-  {
-    id: 15,
-    time: 'SUN 18:00',
-    type: 'Hatha, Ashtanga, Power Yoga, Matt Pilates',
-    level: 'All Levels',
-    instructor: 'Saut (Senior Instructor)',
-    duration: 60,
-    spots: 5,
-    typeColor: 'bg-yoga-accent',
-    description: 'A grounding practice that blends Hatha, Ashtanga, Power Yoga, and Mat Pilates into a balanced, mindful experience. Saut guides you through movement that strengthens the body, clears the mind, and helps you reconnect with calm—perfect for anyone seeking stability, focus, and inner balance.'
-  },
-]
+import { classes } from '~/data/classes';
+
+const data = classes;
 
 const whatsappLink = (yogaClass) => {
-  const phoneNumber = '+6287776336882'
-  const message = encodeURIComponent(`Hi, I would like to book a yoga session at Jimbaran Yoga Studio with the following details:
-
-Name:
-Date: 
-Time: ${yogaClass.time}
-Instructor: ${yogaClass.instructor}`)
-  window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank')
+  const message = `Hi, I would like to book a yoga session at Jimbaran Yoga Studio with the following details:\r\nName:\r\nDate: \r\nTime: ${yogaClass.time}\r\nInstructor: ${yogaClass.instructor}`
+  return useWhatsappMessage().buildLink(message);
 };
+
 </script>
