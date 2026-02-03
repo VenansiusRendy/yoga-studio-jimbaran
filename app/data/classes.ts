@@ -83,6 +83,6 @@ What you’ll get:
 75 minutes vinyasa all body flow
 10% discount in NUI Healthy food for all menus
 Mats are available in limited quantity💓`,
-		booking: "https://kuyy.id/8a98dad2-1a85-48f9-b6fb-ce3cc85e3dbe,",
+		booking: "https://kuyy.id/8a98dad2-1a85-48f9-b6fb-ce3cc85e3dbe",
 	},
 ];
