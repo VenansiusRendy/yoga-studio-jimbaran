@@ -1,20 +1,17 @@
 <template>
 	<div class="min-h-screen bg-white">
 		<Header />
-		<Announcement
-			v-if="
-				new Date() < announcement.endDate && new Date() > announcement.startDate
-			"
-			:data="{
-				title: announcement.title,
-				description: announcement.description,
-				message: announcement.message,
-			}"
-		/>
+		<Announcement v-if="
+			new Date() < announcement.endDate && new Date() > announcement.startDate
+		" :data="{
+			title: announcement.title,
+			description: announcement.description,
+			message: announcement.message,
+		}" />
 		<HeroSection />
 		<WhySection />
 		<ActivitiesSection />
-		<ScheduleSection />
+		<!-- <ScheduleSection /> -->
 		<PricingSection />
 		<BenefitsSection />
 		<BookingSection />
@@ -33,7 +30,7 @@ import Announcement from "@/components/Announcement.vue";
 import HeroSection from "@/components/HeroSection.vue";
 import WhyNuiSection from "~/components/WhySection.vue";
 import ActivitiesSection from "@/components/ActivitiesSection.vue";
-import ScheduleSection from "@/components/ScheduleSection.vue";
+// import ScheduleSection from "@/components/ScheduleSection.vue";
 import BenefitsSection from "@/components/BenefitsSection.vue";
 import BookingSection from "@/components/BookingSection.vue";
 import SpaceSection from "@/components/SpaceSection.vue";
